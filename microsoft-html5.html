@@ -10,10 +10,15 @@
   font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
   a:link, a:active { color: #003366;}
   a:visited { color: #0099cc}
+
+#pagewrapper {
+  width: 800px;
+  background-image:url ("msft_faux_columns.png");
+}
 #toolbar {
   width: 100%;
   background-color: black;
-  overflow: hidden;
+  overflow: hidden; /*overflow:hidden; */
 }
 #toolbar ul{
   padding: 0;
@@ -32,10 +37,12 @@ nav#sidebar-nav ul {
   list-style: none; padding-left: 0;
 }
 div#sidebar {
+  float: left;
   font-size: smaller;
   background-color: #FFCC00;
   width: 110px;
   padding: 3px;
+  /* background-color: #FFCC00 */
 }
 p {
   font-size: small; font-weight: normal;
@@ -46,8 +53,18 @@ footer, p {
 footer {
   text-align: center;
 }
-#go-form {text-align: center; width: 550px; clear: both; padding-top: 4px;}
-#content {width: 620px;padding: 3px;}
+#go-form {text-align: center; width: 550px; clear: both; padding-top: 4px;background: white;}
+
+#content {
+float: left;
+width: 620px;
+padding: 3px;
+margin-left: 26px;
+
+#ad-rotator {
+  margin-left: 136px;
+}
+}
 img[alt="MICROSOFT: Where do you want to go today?"] {
   display: block; margin-bottom: 30px;
 }
@@ -56,7 +73,9 @@ nav#news {margin-bottom: 32px;}
     </style>
 	</HEAD>
 	<BODY>
-		<!--TOOLBAR_START-->
+ <div id="page-wrapper">
+		
+  <!--TOOLBAR_START-->
 		<nav id="toolbar">
 			<ul>
 				<li>
@@ -173,6 +192,6 @@ nav#news {margin-bottom: 32px;}
 
 			<br><A HREF="#" TARGET="_top">Information about Microsoft.com architecture</A>
 		</footer>
-
+</div>
 	</BODY>
 </HTML>
